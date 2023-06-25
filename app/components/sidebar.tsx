@@ -10,6 +10,9 @@ import AddIcon from "../icons/add.svg";
 import CloseIcon from "../icons/close.svg";
 import MaskIcon from "../icons/mask.svg";
 import PluginIcon from "../icons/plugin.svg";
+import QQIcon from "../icons/qq.svg";
+import ShangIcon from "../icons/shang.svg";
+import WeChatIcon from "../icons/wechat.svg";
 
 import Locale from "../locales";
 
@@ -19,8 +22,8 @@ import {
   MAX_SIDEBAR_WIDTH,
   MIN_SIDEBAR_WIDTH,
   NARROW_SIDEBAR_WIDTH,
-  Path,
-  REPO_URL,
+  Path, QQ_URL,
+  REPO_URL, WECHAT_URL,
 } from "../constant";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -173,9 +176,19 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
           </div>
-          <div className={styles["sidebar-action"]}>
+          {/*<div className={styles["sidebar-action"]}>
             <a href={REPO_URL} target="_blank">
               <IconButton icon={<GithubIcon />} shadow />
+            </a>
+          </div>*/}
+          <div className={styles["sidebar-action"]}>
+            <a href={WECHAT_URL} target="_blank">
+              <IconButton icon={<WeChatIcon />} shadow />
+            </a>
+          </div>
+          <div className={styles["sidebar-action"]}>
+            <a href={QQ_URL} target="_blank">
+              <IconButton icon={<QQIcon />} shadow />
             </a>
           </div>
         </div>
