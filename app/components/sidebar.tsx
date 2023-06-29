@@ -194,11 +194,6 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<QQIcon />} shadow />
             </a>
           </div>
-          <div className={styles["sidebar-action"]}>
-            <a href={SHANG_URL} target="_blank">
-              <IconButton icon={<ShangIcon />} shadow />
-            </a>
-          </div>
         </div>
         <div>
           <IconButton
