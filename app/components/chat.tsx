@@ -734,8 +734,6 @@ export function Chat() {
         },
     });
 
-    console.log(messages)
-
     messages?.forEach((msg) => {
         if (msg.model === 'midjourney' && msg.attr.taskId) {
             chatStore.fetchMidjourneyStatus(msg)
@@ -907,7 +905,7 @@ export function Chat() {
                                     {!isUser &&
                                         message.model == "midjourney" &&
                                         message.attr?.finished &&
-                                        ["VARIATION", "IMAGINE"].includes(message.attr?.action) && (
+                                        ["VARIATION", "IMAGINE", "BLEND"].includes(message.attr?.action) && (
                                             <div
                                                 className={[
                                                     styles["chat-message-actions"],
@@ -1027,8 +1025,8 @@ export function Chat() {
                         onSearch("");
                     }}
                     imageSelected={(img: any) => {
-                        if (useImages.length >= 2) {
-                            alert(Locale.Midjourney.SelectImgMax(2));
+                        if (useImages.length >= 5) {
+                            alert(Locale.Midjourney.SelectImgMax(5));
                             return;
                         }
                         setUseImages([...useImages, img]);
