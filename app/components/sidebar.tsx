@@ -22,8 +22,11 @@ import {
   MAX_SIDEBAR_WIDTH,
   MIN_SIDEBAR_WIDTH,
   NARROW_SIDEBAR_WIDTH,
-  Path, QQ_URL,
-  REPO_URL, WECHAT_URL,
+  Path,
+  QQ_URL,
+  REPO_URL,
+  SHANG_URL,
+  WECHAT_URL,
 } from "../constant";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -124,7 +127,13 @@ export function SideBar(props: { className?: string }) {
       <div className={styles["sidebar-header"]}>
         <div className={styles["sidebar-title"]}>ChatGPT-Midjourney</div>
         <div className={styles["sidebar-sub-title"]}>
-          Your own AI assistant.
+          星空团队GPT、MJ目前供大家免费使用。
+          <br />
+          想要学习部署的可以通过下方联系到我。
+          <br />
+          如果觉得我们的项目做的不错请打赏一下。
+          <br />
+          我们所收到的打赏钱将会通过支付宝做公益。
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
@@ -189,6 +198,11 @@ export function SideBar(props: { className?: string }) {
           <div className={styles["sidebar-action"]}>
             <a href={QQ_URL} target="_blank">
               <IconButton icon={<QQIcon />} shadow />
+            </a>
+          </div>
+          <div className={styles["sidebar-action"]}>
+            <a href={SHANG_URL} target="_blank">
+              <IconButton icon={<ShangIcon />} shadow />
             </a>
           </div>
         </div>
