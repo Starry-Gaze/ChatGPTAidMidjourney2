@@ -1,12 +1,12 @@
 <div align="center">
 
-<h1 align="center">ChatGPT-Midjourney</h1>
+<h1 align="center">🍭 ChatGPT-Midjourney</h1>
 
 [中文](./README.md) | [English](./README_EN.md) | 日本語
 
 プライベート ChatGPT + Midjourney ウェブアプリケーションをワンクリックで無料デプロイ（[ChatGPT-Next-Web](https://github.com/Yidadaa/ChatGPT-Next-Web) 開発をベースにしています）
 
-[QQ グループ](https://github.com/Licoy/ChatGPT-Midjourney/issues/30) | [スポンサー](https://licoy.cn/open-sponsor.html) | [プレミアムバージョン](https://github.com/Licoy/ChatGPT-Midjourney-Pro)
+[QQ グループ](https://github.com/Licoy/ChatGPT-Midjourney/issues/30) | [プレミアムバージョン](https://github.com/Licoy/ChatGPT-Midjourney-Pro)
 
 [![Deploy with Vercel](https://img.shields.io/badge/Vercel-Deploy-00CCCC.svg?logo=vercel)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FLicoy%2FChatGPT-Midjourney&env=OPENAI_API_KEY&env=MIDJOURNEY_PROXY_URL&env=CODE&project-name=chatgpt-midjourney&repository-name=ChatGPT-Midjourney)
 [![Deploy with Railway](https://img.shields.io/badge/MidjourneyProxy-RailwayDeploy-009900.svg?logo=railway)](https://github.com/novicezk/midjourney-proxy/blob/main/docs/railway-start.md)
@@ -74,7 +74,7 @@ docker run -d --name midjourney-proxy \
   -e mj.discord.user-token=xxx\
   -e mj.discord.bot-token=xxx\
   --restart=always \
-  novicezk/midjourney-proxy:2.3.2
+  novicezk/midjourney-proxy:2.3.3
 ```
 #### Railway
 > Railway は、柔軟な展開ソリューションを提供するプラットフォームです。サービスは海外にあり、MidJourney が call するのに便利です。
