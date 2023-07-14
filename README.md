@@ -18,6 +18,8 @@
 </div>
 
 ## 功能支持
+🍭 PRO版本支持更强大的功能，宝塔5分钟部署，配置超简单，强大的在线后台管理及配置框架让你丝滑体验，占用内存不到100M，支持高并发：[点我了解及在线体验PRO](https://github.com/Licoy/ChatGPT-Midjourney-Pro)，最低1C1G的服务器就能流畅运行。
+
 - [x] 原`ChatGPT-Next-Web`所有功能
 - [x] Midjourney `Imgine` 想象
 - [x] Midjourney `Upscale` 放大
@@ -121,7 +123,7 @@ docker run -d --name midjourney-proxy \
  -e mj.discord.user-token=xxx \
  -e mj.discord.bot-token=xxx \
  --restart=always \
- novicezk/midjourney-proxy:2.3.3
+ novicezk/midjourney-proxy:2.3.5
 ```
 #### Railway
 > Railway是一个提供弹性部署方案的平台，服务在海外，方便MidJourney的调用。
