@@ -125,15 +125,17 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]}>
-        <div className={styles["sidebar-title"]}>ChatGPT-Midjourney</div>
+        <div className={styles["sidebar-title"]}>虹鳞AI助手</div>
         <div className={styles["sidebar-sub-title"]}>
-          星空团队GPT、MJ目前供大家免费使用。
+          2023年07月18日后下列网站的GPT4、SD绘图、mj绘图开始收取一定费用：
           <br />
-          想要学习部署的可以通过下方联系到我。
+            ①aigc.zijiantty.com（需要注册）
           <br />
-          如果觉得我们的项目做的不错请打赏一下。
+            ②www.zijiantty.com （需要注册）
           <br />
-          我们所收到的打赏钱将会通过支付宝做公益。
+          凡是推广网站的小伙伴，可以获得一些奖励。
+          <br />
+          活动具体解释权归虹鳞AI所有。
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
